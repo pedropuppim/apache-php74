@@ -14,6 +14,8 @@ RUN apt-get install -y tzdata
 RUN ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 RUN dpkg-reconfigure --frontend noninteractive tzdata
 
+RUN apt-get install certbot python3-certbot-apache -y
+
 RUN apt-get install -y \
 apache2 \
 curl \
