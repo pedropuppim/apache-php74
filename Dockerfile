@@ -46,6 +46,7 @@ RUN sed -i -e 's/^zlib.output_compression\s*=.*/zlib.output_compression = Off/' 
 RUN sed -i '/<Directory \/var\/www\/>/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
 
 RUN a2enmod rewrite
+RUN a2enmod ssl
 
 EXPOSE 80
 ENTRYPOINT ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
