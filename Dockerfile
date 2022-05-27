@@ -38,7 +38,7 @@ php7.4-memcache \
 php7.4-intl \
 php7.4-redis
 
-RUN curl -sS https://getcomposer.org/installer | php -- --version=2.0.11 --install-dir=/usr/local/bin --filename=composer
+RUN curl -sS https://getcomposer.org/installer | php -- --version=2.3.5 --install-dir=/usr/local/bin --filename=composer
 
 RUN sed -i -e 's/^error_reporting\s*=.*/error_reporting = E_ALL/' /etc/php/7.4/apache2/php.ini
 RUN sed -i -e 's/^display_errors\s*=.*/display_errors = On/' /etc/php/7.4/apache2/php.ini
