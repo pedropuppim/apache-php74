@@ -1,0 +1,6 @@
+[submodule "athenasr"]
+	path = athenasr
+	url = git@gitlab.com:jpedro/athenasr.git
+[submodule "apix"]
+	path = apix
+	url = git@gitlab.com:jpedro/apix.git

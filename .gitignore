@@ -1,0 +1,27 @@
+# IDE and editor specific files #
+#################################
+/nbproject
+.idea
+/.project
+/.buildpath
+/.settings/
+/.phpintel/
+/.phpintel/*
+.phpintel/
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode
+
+db/*.*
+node_modules
+firebirdadmin
+athenas-es
+apix/vendor

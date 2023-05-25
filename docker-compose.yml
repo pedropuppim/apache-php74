@@ -1,0 +1,30 @@
+version: "3.0"
+services:
+  webserver:
+    container_name: athenas
+    build:
+      context: .
+    ports:
+      - "90:80"
+    volumes:
+      - "./:/var/www/html"
+
+  # firebird:
+  #   container_name: athenas_firebird
+  #   image: jacobalberty/firebird:3.0
+  #   volumes:
+  #     - "./db:/firebird/data/"
+  #     - "./etc:/firebird/etc/"
+  #   ports:
+  #     - "3050:3050"
+  #   environment:
+  #     ISC_PASSWORD: masterkey
+  #     TZ: America/Sao_Paulo
+
+  # redis:
+  #   container_name: athenas_redis
+  #   image: "bitnami/redis:latest"
+  #   environment:
+  #     - ALLOW_EMPTY_PASSWORD=yes
+  #   ports:
+  #     - "6379:6379"
